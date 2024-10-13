@@ -32,8 +32,8 @@ ext {
 
 
 dependencies {
-    implementation 'org.ajoberstar.grgit:grgit-core:3.0.0-rc.2'
-    
+    implementation 'org.ajoberstar.grgit:grgit-core:3.0.0'
+
     implementation group: 'org.keycloak', name: 'keycloak-server-spi-private', version: keycloakVersion
     implementation group: 'org.keycloak', name: 'keycloak-server-spi', version: keycloakVersion
     implementation group: 'org.keycloak', name: 'keycloak-services', version: keycloakVersion
