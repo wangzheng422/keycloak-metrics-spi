@@ -5,7 +5,15 @@ plugins {
 }
 
 repositories {
-    jcenter()
+    // jcenter()
+
+    maven {
+        url "https://plugins.gradle.org/m2/"
+        metadataSources {
+            artifact()
+            mavenPom()
+        }
+    }
 }
 
 configurations {
@@ -43,6 +51,8 @@ dependencies {
     testImplementation group: 'com.github.stefanbirkner', name: 'system-rules', version: '1.19.0'
 
     compileOnly 'org.apache.tomcat:tomcat-servlet-api:9.0.37'
+
+
 
 }
 
